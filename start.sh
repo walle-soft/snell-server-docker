@@ -33,4 +33,10 @@ echo "[snell-server]" >> ${CONF}
 echo "listen = :::9102" >> ${CONF}
 echo "psk = ${PSK}" >> ${CONF}
 
+# Check if the OBFS environment variable is set
+if [ ! -z ${OBFS} ]; then
+    echo "obfs = ${OBFS}" >> ${CONF}
+    echo "Using obfuscation mode: ${OBFS}"
+fi
+
 run_bin
