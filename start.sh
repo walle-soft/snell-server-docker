@@ -3,7 +3,7 @@
 set -e
 
 BIN="/usr/bin/snell-server"
-CONF="/etc/snell-server.conf"
+CONF="/etc/snell/snell-server.conf"
 
 # reuse existing config when the container restarts
 
