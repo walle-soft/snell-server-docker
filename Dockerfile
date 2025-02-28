@@ -11,7 +11,7 @@ COPY --from=xx / /
 COPY get_url.sh /get_url.sh
 
 # 设置环境变量VERSION
-ENV VERSION 4.0.1
+ENV VERSION 4.1.1
 
 # 下载和验证snell-server
 RUN xx-info env && wget -q -O "snell-server.zip" $(/get_url.sh ${VERSION} $(xx-info arch)) && \
